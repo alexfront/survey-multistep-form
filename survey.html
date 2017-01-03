@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Survey</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="survey.css">
+
+
+</head>
+
+<body>
+
+
+<div class="container">
+	<div class="row">
+   		 <!-- Need one called content pane for the skin to work! -->
+		<div id="ContentPane" runat="server" class="col-md-12"></div> 
+    </div>
+    <div class="row">
+    
+       <!-- Nav will be push pulled into place for desktop size  col-md-pull-9-->
+       <div class="col-md-3"  id="PinkNav" runat="server"   >
+      
+       </div>
+       
+		<!-- copy / js resupts col-md-push-3 -->
+       
+       <div class="col-md-6 " id="Results" runat="server"> 
+       <div class="row surveyRow"><div class="col-md-12">
+
+<h1 class="text-center">Survey</h1><hr class="featurette-divider" /><p>After you fill out this survey you will see recommendations based on your answers</p>
+
+<hr />
+
+<div class="progress">
+		  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<form class="formBig">
+<div class="step">
+<div class="bs-example">
+<ol><li> Question 1</li></ol></div>
+<div class="listReport">
+<div id="a1" class="errormsg"></div>
+<label class="radio-inline"><input type="radio" name="q1" value="2" />&nbsp;Yes</label><label class="radio-inline"><input type="radio" name="q1" value="1" />&nbsp;Sometimes</label><label class="radio-inline"><input type="radio" name="q1" value="3" />&nbsp;No</label></div>
+
+<div class="bs-example">
+<ol start="2"><li> Question 2</li></ol>
+</div>
+<div class="listReport">
+<div id="a2" class="errormsg"></div>
+<label class="radio-inline"><input type="radio" name="q2" value="2" />&nbsp;Yes</label><label class="radio-inline"><input type="radio" name="q2" value="1" />&nbsp;Sometimes </label><label class="radio-inline"><input type="radio" name="q2" value="3" />&nbsp;No</label>
+</div>
+
+<div class="bs-example"><ol start="3"><li> Question 3</li></ol></div>
+<div class="listReport">
+<div id="a3" class="errormsg"></div>
+<label><input type="radio" name="q3" value="2" />&nbsp;Yes</label>
+<label><input type="radio" name="q3" value="1" />&nbsp;Sometimes</label>
+<label><input type="radio" name="q3" value="3" />&nbsp;No</label>
+</div>
+
+<div class="bs-example"><ol start="4"><li> Question 4</li></ol></div>
+<div class="listReport">
+<div id="a4" class="errormsg"></div>
+<label class="radio-inline"><input type="radio" name="q4" value="2" />&nbsp;Yes </label><label class="radio-inline"><input type="radio" name="q4" value="1" />&nbsp;Sometimes </label><label class="radio-inline"><input type="radio" name="q4" value="3" />&nbsp;No </label>
+</div>
+
+<div class="bs-example"><ol start="5"><li> Question 5</li></ol></div>
+<div class="listReport">
+<div id="a5" class="errormsg"></div>
+<label class="radio-inline"><input type="radio" name="q5" value="2" />&nbsp;Yes</label><label class="radio-inline"><input type="radio" name="q5" value="1" />&nbsp;Sometimes</label><label class="radio-inline"><input type="radio" name="q5" value="3" />&nbsp;No</label>
+</div>
+</div>
+
+<div class="step">
+<div class="bs-example"><ol start="6"><li> Question 6</li></ol></div>
+<div class="listReport">
+<div id="a6" class="errormsg"></div>
+<label><input type="radio" name="q6" value="2" />&nbsp;Yes</label>
+<label><input type="radio" name="q6" value="1" />&nbsp;Sometimes</label><label><input type="radio" name="q6" value="3" />&nbsp;No</label>
+</div>
+
+<div class="bs-example"><ol start="7"><li> Question 7</li></ol></div>
+<div class="listReport">
+<div id="a7" class="errormsg"></div>
+<label class="radio-inline"><input type="radio" name="q7" value="2" />&nbsp;Yes</label><label class="radio-inline"><input type="radio" name="q7" value="1" />&nbsp;Sometimes</label><label class="radio-inline"><input type="radio" name="q7" value="3" />&nbsp;No</label>
+</div>
+
+<div class="bs-example"><ol start="8"><li> Question 8</li></ol></div>
+<div class="listReport">
+<div id="a8" class="errormsg"></div>
+<label class="radio-inline"><input type="radio" name="q8" value="1" />&nbsp;Yes</label><label class="radio-inline"><input type="radio" name="q8" value="2" />&nbsp;Sometimes</label><label class="radio-inline"><input type="radio" name="q8" value="3" />&nbsp;No</label>
+</div>
+
+<div class="bs-example"><ol start="9"><li> Question 9</li></ol></div>
+<div class="listReport">
+<div id="a9" class="errormsg"></div>
+<label><input type="radio" name="q9" value="2" />&nbsp;Yes</label>
+<label><input type="radio" name="q9" value="1" />&nbsp;Sometimes</label>
+<label><input type="radio" name="q9" value="3" />&nbsp;No</label>
+</div>
+
+<div class="bs-example"><ol start="10"><li> Question 10</li></ol></div>
+<div class="listReport">
+<div id="a10" class="errormsg"></div>
+<label class="radio-inline"><input type="radio" name="q10" value="2" />&nbsp;Yes</label><label class="radio-inline"><input type="radio" name="q10" value="1" />&nbsp;Sometimes</label><label class="radio-inline"><input type="radio" name="q10" value="3" />&nbsp;No</label>
+</div>
+</div>
+
+<div class="step">
+<div class="bs-example"><ol start="11"><li> Question 11</li></ol></div>
+<div class="listReport">
+<div id="a11" class="errormsg"></div>
+<label class="radio-inline"><input type="radio" name="q11" value="2" />&nbsp;Yes</label><label class="radio-inline"><input type="radio" name="q11" value="1" />&nbsp;Sometimes</label><label class="radio-inline"><input type="radio" name="q11" value="3" />&nbsp;No</label>
+</div>
+
+<div class="bs-example"><ol start="12"><li> Question 12</li></ol></div>
+<div class="listReport">
+<div id="a12" class="errormsg"></div>
+<label><input type="radio" name="q12" value="2" />&nbsp;Yes</label>
+<label><input type="radio" name="q12" value="1" />&nbsp;Sometimes</label>
+<label><input type="radio" name="q12" value="3" />&nbsp;No</label>
+</div>
+
+<div class="bs-example"><ol start="13"><li> Question 13</li></ol></div>
+<div class="listReport">
+<div id="a13" class="errormsg"></div>
+<label><input type="radio" name="q13" value="2" />&nbsp;Yes</label>
+<label><input type="radio" name="q13" value="1" />&nbsp;Sometimes</label>
+<label><input type="radio" name="q13" value="3" />&nbsp;No</label>
+</div>
+
+<div class="bs-example"><ol start="14"><li> Question 14</li></ol></div>
+<div class="listReport">
+<div id="a14" class="errormsg"></div>
+<label class="radio-inline"><input type="radio" name="q14" value="2" />&nbsp;Yes</label><label class="radio-inline"><input type="radio" name="q14" value="1" />&nbsp;Sometimes</label><label class="radio-inline"><input type="radio" name="q14" value="3" />&nbsp;No</label>
+</div>
+</div>
+<hr />
+<div class="col-md-4 text-left"><div class="action back btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Back</div></div>
+<div class="col-md-8 text-right"><div class="action next btn btn-default">Next <span class="glyphicon glyphicon-chevron-right"></span></div></div>
+
+
+<div id="error"></div> <div class=" text-right"> <div id="calculate" class="action btn btn-default" onclick="processAnswers()">View Recommendations &nbsp;&nbsp;<span class="glyphicon glyphicon-eye-open"></span></div> </div> </form> </div> </div> 
+
+<div class="row"> <div class="col-md-12"> <div class="text-center"> <hr class="featurette-divider" /> </div> </div> </div> 
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="myModal"> <div class="modal-dialog modal-lg"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h4 class="modal-title" id="myModalLabel">Recommendations</h4> </div> <div class="modal-body" id="description"> </div> </div> </div> </div> 
+
+<!--<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="errorModal"> <div class="modal-dialog modal-sm"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h4 class="modal-title" id="myModalLabel">Message Box</h4> </div> <div class="modal-body"> <p class="errormsg">Please answer all questions!</p></div> </div> </div> </div>-->
+       
+       
+       </div>
+                
+          <!-- Form  col-md-push-3 -->
+        <div class="col-md-3">
+              
+               <div id="form-hide-print" class="formStyle ">
+                   <div id="NonUnity" runat="server" ></div>	
+  					 <div id="Form" runat="server" ></div>
+               </div>
+     	    </div>
+        </div>
+       
+
+	</div>
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="js/survey-2-en.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+
+<!-- ========
+multy step form
+============= -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		var current = 1;
+		
+		widget      = $(".step");
+		btnnext     = $(".next");
+		btnback     = $(".back"); 
+		btnsubmit   = $("#calculate");
+
+		// Init buttons and UI
+		widget.not(':eq(0)').hide();
+		hideButtons(current);
+		setProgress(current);
+
+		
+  
+		// Next button click action
+		btnnext.click(function(){
+			if(current < widget.length){
+				// Check validation
+				if($("form").valid()){
+				  console.log(current);
+				  widget.show();
+				  widget.not(':eq('+(current++)+')').hide();
+				  setProgress(current);
+				}
+			}
+			hideButtons(current);
+		})
+
+		// Back button click action
+		btnback.click(function(){
+			if(current > 1){
+				console.log(current);
+				current = current - 2;
+				btnnext.trigger('click');
+			}
+			hideButtons(current);
+		})	
+
+	    $("form").validate({
+			
+			errorPlacement: function(error, element) {
+            if (element.attr("name") == "q1") {
+      			error.insertBefore("#a1"); 
+            }
+			else if (element.attr("name") == "q2") {
+      			error.insertBefore("#a2");
+			} 
+			else if (element.attr("name") == "q3") {
+      			error.insertBefore("#a3");
+			} 
+			else if (element.attr("name") == "q4") {
+      			error.insertBefore("#a4");
+			} 
+			else if (element.attr("name") == "q5") {
+      			error.insertBefore("#a5");
+			} 
+			else if (element.attr("name") == "q6") {
+      			error.insertBefore("#a6");
+			} 
+			else if (element.attr("name") == "q7") {
+      			error.insertBefore("#a7");
+			} 
+			else if (element.attr("name") == "q8") {
+      			error.insertBefore("#a8");
+			} 
+			else if (element.attr("name") == "q9") {
+      			error.insertBefore("#a9");
+			} 
+			else if (element.attr("name") == "q10") {
+      			error.insertBefore("#a10");
+			} 
+			else if (element.attr("name") == "q11") {
+      			error.insertBefore("#a11");
+			} 
+			else if (element.attr("name") == "q12") {
+      			error.insertBefore("#a12");
+			} 
+			else if (element.attr("name") == "q13") {
+      			error.insertBefore("#a13");
+			} 
+			else if (element.attr("name") == "q14") {
+      			error.insertBefore("#a14");
+			} else {
+                error.insertAfter(element);
+            }
+        },
+			
+			ignore:":not(:visible)",	
+			debug: true,
+			errorClass: "errormsg",
+			rules: {
+					q1    	: "required",
+					q2    	: "required",
+					q3    	: "required",
+					q4    	: "required",
+					q5    	: "required",
+					q6    	: "required",
+					q7    	: "required",
+					q8    	: "required",
+					q9    	: "required",
+					q10    	: "required",
+					q11    	: "required",
+					q12    	: "required",
+					q13    	: "required",
+					q14   	: "required",
+				  },
+   			messages: {},
+			});
+			
+			jQuery.extend(jQuery.validator.messages, {
+				required: "Please select one of these options",
+			});
+	});
+
+	// Change progress bar action
+	setProgress = function(currstep){
+		var percent = parseFloat(100 / widget.length) * currstep;
+		percent = percent.toFixed();
+		$(".progress-bar").css("width",percent+"%").html(percent+"%");		
+	}
+
+	// Hide buttons according to the current step
+	hideButtons = function(current){
+		var limit = parseInt(widget.length); 
+
+		$(".action").hide();
+
+		if(current < limit) btnnext.show();
+		if(current > 1) btnback.show();
+		if (current == limit) { btnnext.hide(); btnsubmit.show(); }
+	};
+</script>
+
+</body>
+</html>
